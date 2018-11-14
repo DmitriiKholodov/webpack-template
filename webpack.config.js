@@ -23,5 +23,15 @@ module.exports = {
 		hot: true,
     	contentBase: 'app/',
     	watchContentBase: true,
-	}
+	},
+
+	plugins: [
+	
+	new webpack.ProvidePlugin({
+		$: 'jquery',
+		jQuery: 'jquery',
+		jquery: 'jquery'
+	})
+
+	]
 }

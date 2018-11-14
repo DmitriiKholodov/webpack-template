@@ -1,3 +1,5 @@
 export default function testWebpack() {
-	console.log('webpack loaded');
+	$(document).ready(console.log('$ working'));
+	jquery(document).ready(console.log('jquery working'));
+	jQuery(document).ready(console.log('jQuery working'));
 }
