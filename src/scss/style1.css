@@ -1,0 +1,9 @@
+/*@import "~bootstrap/scss/bootstrap";*/
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	color: rgb(255, 255, 255);
+}
