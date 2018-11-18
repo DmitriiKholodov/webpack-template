@@ -11,13 +11,13 @@ module.exports = {
 		app: [
 		'./js/app.js',
 		// './scss/style.scss'
-		'./scss/style1.css'
+		'./scss/style.scss'
 		],
 		
 	},
 
 	output: { 
-		path: path.resolve(__dirname, 'dist/js'),
+		path: path.resolve(__dirname, 'dist/'),
 		filename: 'js/[name].js',
 		publicPath: 'dist/'
 	},
@@ -31,13 +31,16 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.css/,
+				test: /\.s?css/,
 				use: [
 					{
 						loader: 'style-loader',
 					},
 					{
 						loader: 'css-loader'
+					},
+					{
+						loader: 'sass-loader'
 					}
 				]
 			}

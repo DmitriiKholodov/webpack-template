@@ -4,6 +4,7 @@ import 'bootstrap';
 
 
 testWebpack();
+testWebpack();
 
 
 
